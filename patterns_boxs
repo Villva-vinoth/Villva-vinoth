@@ -1,0 +1,165 @@
+package vinoth;
+
+public class box {
+    int n =5;
+    void box1(){
+        System.out.println ("BOX without space : ");
+        for (int i=0;i<=n;i++){
+            for (int j=0;j<=n;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+
+   void box2(){
+       System.out.println (" BOX with space or Root of basic box :");
+       for (int i=0;i<=n;i++){
+           for (int j=0;j<=n;j++)
+           {
+
+                   System.out.print(" * ");
+           }
+           System.out.println(" ");
+       }
+
+   }
+   void box3(){
+       System.out.println(" increasing Triangle :");
+       System.out.println("");
+       for(int i=0;i<=n;i++){
+           for(int j=0;j<=i;j++){
+               System.out.print("* ");
+           }
+           System.out.println(" ");
+       }
+   }
+    void box4(){
+        System.out.println(" Decreasing  Triangle :");
+        System.out.println("");
+        for(int i=0;i<=n;i++){
+            for(int j=i;j<=n;j++){
+                System.out.print("* ");
+            }
+            System.out.println(" ");
+        }
+    }
+    void box5(){
+        System.out.println(" reverse Increasing Triangle :");
+        for(int i=0;i<=n;i++){
+            for(int j=i;j<=n;j++){
+                System.out.print("  ");
+            }
+            for(int j=0;j<=i;j++){
+                System.out.print(" *");
+            }
+            System.out.println(" ");
+        }
+    }
+    void box6(){
+        System.out.println(" reverse Decreasing Triangle :");
+        System.out.println("");
+        for(int i=0;i<=n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print("  ");
+            }
+            for(int j=i;j<=n;j++){
+                System.out.print(" *");
+            }
+            System.out.println(" ");
+        }
+    }
+    void box7(){
+        System.out.println(" Pyramid (1,2,3):");
+        System.out.println("");
+        for(int i=0;i<=n;i++){
+            for(int j=i;j<=n;j++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println(" ");
+        }
+    }
+    void box8(){
+        System.out.println(" Pyramid (1,3,5):");
+        for(int i=0;i<=n;i++){
+            for(int j=i;j<=n;j++){
+                System.out.print("  ");
+            }
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+
+            System.out.println("  ");
+        }
+    }
+    void box9(){
+        System.out.println(" Reverse Pyramid 1,3,5:");
+        System.out.println("");
+        for(int i=0;i<=n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print("  ");
+            }
+            for(int j=i;j<=n;j++){
+                System.out.print("* ");
+            }
+            for(int j=i;j<n;j++){
+                System.out.print("* ");
+            }
+
+            System.out.println("  ");
+        }
+    }
+    void box10(){
+        System.out.println(" Diamond :");
+        for(int i=0;i<=n-1;i++){
+            for(int j=i;j<=n;j++){
+                System.out.print("  ");
+            }
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+
+            System.out.println("  ");
+        }
+        for(int i=0;i<=n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print("  ");
+            }
+            for(int j=i;j<=n-1;j++){
+                System.out.print("* ");
+            }
+            for(int j=i;j<=n;j++){
+                System.out.print("* ");
+            }
+
+            System.out.println("  ");
+        }
+    }
+
+}
+class main {
+    public static void main(String[] args) {
+        box b=new box();
+        b.box1();
+        b.box2();
+        b.box3();
+        b.box4();
+        b.box5();
+        b.box6();
+        b.box7();
+        b.box8();
+        b.box9();
+        b.box10();
+
+    }
+}
